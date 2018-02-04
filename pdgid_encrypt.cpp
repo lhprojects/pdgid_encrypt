@@ -178,6 +178,7 @@ int main(int argc, char *argv[]) {
 				decryption(str);
 			}
 			if(i+1 != argc) printf(" ");
+			else printf("\n");
 		}
 
 	} else {
@@ -199,8 +200,8 @@ int main(int argc, char *argv[]) {
 				encryption(str, hash);
 			}
 			if (i + 1 != argc) printf(" ");
+			else printf("\n");
 
 		}
 	}
-
 }
