@@ -164,7 +164,9 @@ int main(int argc, char *argv[]) {
 		init_id2char();
 		for (int i = 2; i < argc; ++i) {
 			char *str = argv[i];
+			bool isf = false;
 			if (strcmp(str, "-f") == 0) {
+				isf = true;
 				++i;
 				char *file = argv[i];
 				if (FILE *f = fopen(file, "r")) {
@@ -178,15 +180,17 @@ int main(int argc, char *argv[]) {
 				decryption(str);
 			}
 			if(i+1 != argc) printf(" ");
-			else printf("\n");
+			else if(!isf) printf("\n");
 		}
 
 	} else {
 		uint32_t hash = 5381;
 		for (int i = 1; i < argc; ++i) {
 			char *str = argv[i];
+			bool isf = false;
 
 			if (strcmp(str, "-f") == 0) {
+				isf = true;
 				++i;
 				char *file = argv[i];
 				if (FILE *f = fopen(file, "r")) {
@@ -200,7 +204,7 @@ int main(int argc, char *argv[]) {
 				encryption(str, hash);
 			}
 			if (i + 1 != argc) printf(" ");
-			else printf("\n");
+			else if(!isf) printf("\n");
 
 		}
 	}
