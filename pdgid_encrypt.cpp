@@ -2,10 +2,9 @@
 
 #include <map>
 #include <string>
-#include <string>
+#include <string.h>
 #include <algorithm>
 #include <stdio.h>
-
 
 std::map<std::string, char> id2char;
 std::multimap<char, std::string> const char2id = {
