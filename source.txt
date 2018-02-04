@@ -1,0 +1,9 @@
+The Monte Carlo particle numbering scheme presented here is
+intended to facilitate interfacing between event generators, detector
+simulators, and analysis packages used in particle physics. The
+numbering scheme was introduced in 1988 [1] and a revised
+version [2,3] was adopted in 1998 in order to allow systematic inclusion
+of quark model states which are as yet undiscovered and hypothetical
+particles such as SUSY particles. The numbering scheme is used in
+several event generators, e.g. HERWIG and PYTHIA/JETSET, and
+in the /HEPEVT/ [4] standard interface.
