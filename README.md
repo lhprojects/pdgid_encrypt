@@ -10,7 +10,7 @@ Encrypt message using Particle Data Group numbering scheme
 测试方法：`./pdgid_encrypt Happy New #Year2018`应当会得到`#025#20113#2212#2212#22 #0221#11#223 ###022#11#20113#553#.2018`。
 然后`./pdgid_encrypt -d "#025#20113#2212#2212#22 #0221#11#223 ###022#11#20113#553#.2018"`，应当会得到`Happy New #Year2018`。
 
-也可测试对文件的转换``
+也可测试对文件的转换
 ```
 ./pdgid_encrypt -f source.txt > convert-to.txt
 ./pdgid_encrypt -d -f convert-to.txt > convert-back.txt
