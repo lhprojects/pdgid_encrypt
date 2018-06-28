@@ -155,7 +155,7 @@ std::string read_file(FILE *f) {
 int main(int argc, char *argv[]) {
 	if (argc == 1) {
 		printf("usage: `pdgid_enctrypt <public_string>` for encryption and `pdgid_enctrypt -d <secret_string>` for dencryption\n");
-		printf("       use `-f <file.txt>` to read a file");
+		printf("       use `-f <file.txt>` to read a file\n");
 		return 0;
 	}
 
